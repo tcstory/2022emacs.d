@@ -16,10 +16,10 @@
 
 
 (require 'package)
-(setq package-archives
-      '(("melpa" . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/melpa/")
-        ("org"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/org/")
-        ("gnu"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/gnu/")))
+(setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
+			 ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
+			 ("nongnu" . "http://mirrors.ustc.edu.cn/elpa/nongnu/")))
+
 (package-initialize)
 
 ;;防止反复调用 package-refresh-contents 会影响加载速度
