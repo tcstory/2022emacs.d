@@ -32,6 +32,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (require 'init-evil)
+(require 'init-racket-mode)
 (load-theme 'dracula 1)
 
 (provide 'init)
