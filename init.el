@@ -30,14 +30,16 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(require 'init-evil)
-
 (use-package dracula-theme
   :ensure t
   :init
   (load-theme 'dracula t))
 
+(require 'init-evil)
+(require 'init-doom-modeline)
+
 (provide 'init)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
