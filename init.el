@@ -19,7 +19,6 @@
 (setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
 			 ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
 			 ("nongnu" . "http://mirrors.ustc.edu.cn/elpa/nongnu/")))
-
 (package-initialize)
 
 ;;防止反复调用 package-refresh-contents 会影响加载速度
@@ -32,8 +31,11 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (require 'init-evil)
-(require 'init-racket-mode)
-(load-theme 'dracula 1)
+
+(use-package dracula-theme
+  :ensure t
+  :init
+  (load-theme 'dracula t))
 
 (provide 'init)
 (custom-set-variables
@@ -41,9 +43,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("73803d7cebbc240fd6cd8a54077b8fbf0b263a25db48579f5953279986283481" default))
- '(package-selected-packages '(dracula-theme fcitx evil use-package)))
+ '(package-selected-packages '(dracula-theme use-package fcitx evil)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
