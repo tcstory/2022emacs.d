@@ -16,9 +16,8 @@
 
 
 (require 'package)
-(setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
-			 ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
-			 ("nongnu" . "http://mirrors.ustc.edu.cn/elpa/nongnu/")))
+(setq package-archives '(("gnu"   . "http://1.15.88.122/gnu/")
+                         ("melpa" . "http://1.15.88.122/melpa/")))
 (package-initialize)
 
 ;;防止反复调用 package-refresh-contents 会影响加载速度
