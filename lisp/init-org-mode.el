@@ -29,7 +29,7 @@
 (define-key org-mode-map (kbd "C-c C-g C-r") 'org-shiftmetaright)
 
 ;; Hide the markers so you just see bold text as BOLD-TEXT and not *BOLD-TEXT*
-;; (setq org-hide-emphasis-markers t)
+(setq org-hide-emphasis-markers t)
 
 ;; Wrap the lines in org mode so that things are easier to read
 (add-hook 'org-mode-hook 'visual-line-mode)
@@ -46,7 +46,7 @@
 
         ("d" "澳觅每一天"
          entry (file+datetree "~/Coding/org-note/org-life/aomi-2023.org")
-         "* TODO %?\n:Created: %T\n "
+         "* TODO %?"
          :empty-lines 0)
       ))
 
