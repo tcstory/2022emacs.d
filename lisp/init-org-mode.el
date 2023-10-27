@@ -40,12 +40,12 @@
 (setq org-capture-templates
       '(    
         ("w" "澳觅"
-         entry (file+headline "~/Coding/org-note/org-life/2023.org" "澳觅")
+         entry (file+headline "~/Coding/org-note/org-life/aomi-2023.org" "澳觅")
          "* TODO [#B] %?\n:Created: %T\n "
          :empty-lines 0)
 
         ("d" "澳觅每一天"
-         entry (file+datetree "~/Coding/org-note/org-life/2023.org")
+         entry (file+datetree "~/Coding/org-note/org-life/aomi-2023.org")
          "* TODO %?\n:Created: %T\n "
          :empty-lines 0)
       ))
