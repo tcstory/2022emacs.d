@@ -36,6 +36,7 @@
 
 (require 'init-evil)
 (require 'init-doom-modeline)
+(require 'init-org-mode)
 
 (provide 'init)
 
