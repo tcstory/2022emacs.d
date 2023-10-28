@@ -2,7 +2,8 @@
   :pin gnu)
 
 ;; Must do this so the agenda knows where to look for my files
-(setq org-agenda-files '("~/Coding/org-note/org-life/"))
+;; (setq org-agenda-files '("~/Coding/org-note/org-life/"))
+(setq org-agenda-files (directory-files-recursively "~/Coding/org-note/org-life/" "\\.org$"))
 
 ;; When a TODO is set to a done state, record a timestamp
 ;; (setq org-log-done 'time)
@@ -40,13 +41,13 @@
 (setq org-capture-templates
       '(    
         ("w" "澳觅"
-         entry (file+headline "~/Coding/org-note/org-life/aomi-2023.org" "澳觅")
-         "* TODO [#B] %?\n:Created: %T\n "
+         entry (file+headline "~/Coding/org-note/org-life/aomi/2023.org" "澳觅")
+         "* TODO [#B] %?"
          :empty-lines 0)
 
         ("d" "澳觅每一天"
-         entry (file+datetree "~/Coding/org-note/org-life/aomi-2023.org")
-         "* TODO %?"
+         entry (file+datetree "~/Coding/org-note/org-life/aomi/2023.org")
+         "* %?"
          :empty-lines 0)
       ))
 
