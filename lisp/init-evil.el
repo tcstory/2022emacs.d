@@ -1,3 +1,5 @@
+(setq evil-want-C-i-jump nil)
+
 (use-package evil
   :ensure t
   :init (evil-mode 1)
