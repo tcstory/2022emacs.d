@@ -41,7 +41,7 @@
 (setq org-capture-templates
       '(    
         ("w" "澳觅"
-         entry (file+headline "~/Coding/org-note/org-life/aomi/2023.org" "澳觅")
+         entry (file+headline "~/Coding/org-note/org-life/aomi/2024.org" "澳觅")
          "* TODO [#B] %?"
          :empty-lines 1)
       ))
