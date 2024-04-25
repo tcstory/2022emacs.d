@@ -41,8 +41,9 @@
 (setq org-capture-templates
       '(    
         ("w" "澳觅"
-         entry (file+headline "~/Coding/org-note/org-life/aomi/2024.org" "澳觅")
+         entry (file+datetree "~/Coding/org-note/org-life/aomi/2024-v2.org")
          "* TODO [#B] %?"
+         :tree-type month
          :empty-lines 1)
       ))
 
