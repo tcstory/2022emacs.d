@@ -3,7 +3,7 @@
 
 ;; Must do this so the agenda knows where to look for my files
 ;; (setq org-agenda-files '("~/Coding/org-note/org-life/"))
-(setq org-agenda-files (directory-files-recursively "~/Coding/org-note/org-life/" "\\.org$"))
+(setq org-agenda-files (directory-files-recursively "~/Documents/org-note/org-life/" "\\.org$"))
 
 ;; When a TODO is set to a done state, record a timestamp
 ;; (setq org-log-done 'time)
@@ -41,7 +41,7 @@
 (setq org-capture-templates
       '(    
         ("w" "澳觅"
-         entry (file+datetree "~/Coding/org-note/org-life/aomi/2026.org")
+         entry (file+datetree "~/Documents/org-note/org-life/aomi/2026.org")
          "* TODO [#B] %?"
          :tree-type month
          :empty-lines 1)

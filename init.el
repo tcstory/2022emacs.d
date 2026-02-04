@@ -49,7 +49,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(global-display-line-numbers-mode t)
- '(package-selected-packages '(use-package fcitx evil))
+ '(package-selected-packages nil)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
